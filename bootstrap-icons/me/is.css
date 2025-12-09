@@ -1,0 +1,36 @@
+/* Mode Toggle Button */
+.mode-toggle {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* Tema Light */
+.theme-light {
+    --bg: #ffffff;
+    --text: #000000;
+    --box-bg: #ffffff;
+}
+
+.theme-light .button {
+    background-color: hsl(171, 100%, 96%);
+    color: hsl(171, 100%, 41%);
+}
+
+.theme-light .button:hover {
+    background-color: hsl(170, 100%, 91%);
+}
+/* Terapkan variabel */
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.box {
+    background: var(--box-bg) !important;
+}
