@@ -21,7 +21,8 @@
 
 Buka file berikut langsung di browser:
 
-    index.html
+    https://rizalsih.github.io/link
 
 Tidak memerlukan instalasi tambahan.
+
 
