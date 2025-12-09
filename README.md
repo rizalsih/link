@@ -12,7 +12,6 @@
     ├── index.html
     ├── img/
     │   ├── rizal.jpg
-    │   └── preview.png       # opsional untuk README
     ├── me/
     │   ├── is.css
     │   └── is.js
@@ -24,5 +23,6 @@ Buka file berikut langsung di browser:
     https://rizalsih.github.io/link
 
 Tidak memerlukan instalasi tambahan.
+
 
 
