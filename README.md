@@ -10,6 +10,6 @@
 
 Buka file berikut langsung di browser:
 
-index.html
+    index.html
 
 Tidak memerlukan instalasi tambahan.
