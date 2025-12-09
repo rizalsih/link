@@ -1,145 +1,80 @@
 <!DOCTYPE html>
 <html class="theme-light">
+
 <head>
     <meta charset="utf-8">
+    </meta>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+
     <title>rizalsih</title>
 
     <!-- Bulma -->
-    <link rel="stylesheet" href="bulma/css/bulma.min.css">
-    <!-- Icon Bootstrap 5 -->
-    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+    <link rel="stylesheet" href="me/is.css">
+    </link>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-          rel="stylesheet">
+    </link>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    </link>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    </link>
 
-    <style>
-        /* TRANSISI HALUS */
-html, body, .box {
-    transition: 0.25s ease-in-out;
-}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-/* 🌞 LIGHT MODE (default) */
-html {
-    background-color: #ffffff;
-    color: #1a1a1a;
-}
-
-html .box {
-    background-color: #ffffff;
-    color: #1a1a1a;
-}
-
-/* Semua teks, ikon, link mengikuti tema */
-html .title,
-html .subtitle,
-html p,
-html a,
-html i {
-    color: #1a1a1a;
-}
-
-/* 🌙 DARK MODE (ketika class .dark aktif) */
-html.dark {
-    background-color: #1a1a1a;
-    color: #f1f1f1;
-}
-
-html.dark .box {
-    background-color: #2a2a2a;
-    color: #f1f1f1;
-}
-
-/* Semua teks, ikon, link berubah ke warna terang */
-html.dark .title,
-html.dark .subtitle,
-html.dark p,
-html.dark i {
-    color: #f1f1f1 !important;
-}
-
-/* Link saat dark mode */
-html.dark a {
-    color: #9fc5ff !important;
-}
-
-/* Tombol TIDAK diubah warnanya! */
-.button {
-    transition: none !important; /* biar tidak terpengaruh dark mode */
-}
-
-/* Tombol toggle posisi */
-.toggle-btn {
-    position: absolute;
-    top: 12px;
-    right: 16px;
-    cursor: pointer;
-}
-
-    </style>
 </head>
 
 <body>
 
-<div class="container is-fluid mt-4">
-    <div class="box" id="cardBox" style="position: relative;">
+    <div class="container is-fluid mt-6">
+        <div class="box" id="cardBox" style="position: relative;">
+            <!-- Tombol Light / Dark Mode -->
 
-        <!-- Tombol Light / Dark Mode (hanya untuk card) -->
-        <button class="button is-primary is-dark is-rounded is-small toggle-btn" id="themeToggle">
-           <i class=" bi bi-sun-fill" id="iconMode"></i>
-        </button>
+            <div id="toggleMode" class="mode-toggle">
+                <i class="fa-solid fa-sun"></i>
+            </div>
 
-        <div class="hero div mt-4 has-text-centered">
-            <div class="hero-body">
+            <div class="hero div has-text-centered">
+                <div class="hero-body">
+                    <div class="container">
+                        <figure class="image is-128x128 is-inline-block mb-4">
+                            <img class="is-rounded" src="img/rizal.jpg" alt="Abdul Rizal">
+                        </figure>
+
+                        <h1 class="title is-4">Abdul Rizal</h1>
+
+                        <div class="subtitle is-6 mb-1 is-capitalized">warehouse specialist</div>
+
+                    </div>
+                </div>
+
                 <div class="container">
-                    <figure class="image is-128x128 is-inline-block mb-4">
-                        <img class="is-rounded" src="img/rizal.jpg" alt="Abdul Rizal">
-                    </figure>
-                    <h1 class="title is-4">Abdul Rizal</h1>
-                    <div class="subtitle is-6 mb-1 is-capitalized">warehouse specialist</div>
+                    <div class="buttons is-centered is-flex-direction-column">
+                        <a class="button button is-primary is-inverted is-fullwidth"
+                            href="https://rizalsih.github.io/me/">Curriculum Vitae</a>
 
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-github"></i>
-                    <i class="bi bi-envelope-paper-fill"></i>
+                        <a class="button button is-primary is-inverted is-fullwidth"
+                            href="https://www.linkedin.com/in/rizalsih/">Linkedin</a>
+
+                        <a class="button button is-primary is-inverted is-fullwidth"
+                            href="mailto:abdulrizalsy@gmail.com">Email</a>
+
+                        <a class="button button is-primary is-inverted is-fullwidth"
+                            href="https://github.com/rizalsih">Github</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="container">
-                <div class="buttons is-centered is-flex-direction-column">
-                    <a class="button is-primary is-dark is-rounded is-fullwidth" href="https://rizalsih.github.io/me/">Portofolio</a>
-                    <a class="button is-primary is-dark is-rounded is-fullwidth" href="https://www.linkedin.com/in/rizalsih/">Linkedin</a>
-                    <a class="button is-primary is-dark is-rounded is-fullwidth" href="mailto:abdulrizalsy@gmail.com">Email</a>
-                    <a class="button is-primary is-dark is-rounded is-fullwidth" href="https://github.com/rizalsih">Github</a>
-                </div>
-            </div>
-
-
         </div>
-
     </div>
-</div>
-
-<script>
-    const btn = document.getElementById('themeToggle');
-    const icon = document.getElementById('iconMode');
-    const html = document.documentElement;
-
-    btn.addEventListener('click', () => {
-        html.classList.toggle('dark');
-
-        if (html.classList.contains('dark')) {
-            icon.classList.remove('bi-sun-fill');
-            icon.classList.add('bi-moon-fill');
-        } else {
-            icon.classList.remove('bi-moon-fill');
-            icon.classList.add('bi-sun-fill');
-        }
-    });
-</script>
-
-
 </body>
+
+<script src="me/is.js"></script>
+
 </html>
